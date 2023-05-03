@@ -4,10 +4,10 @@ require('dotenv').config()
 require('./mongoose')
 const bodyParse = require('body-parser')
 
-app.use(cors())
 // Express app
 const app = express()
 
+app.use(cors())
 app.use(bodyParse.json())
 // Express Routers
 const { userRouter } = require('./controllers/user')
