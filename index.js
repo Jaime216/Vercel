@@ -25,7 +25,7 @@ app.use(express.json())
 app.use('', express.static('../FrontEnd/dist'))
 
 // Use Routers
-aa.get('', (req, res ) => { res.send(<h1>Hola mundo</h1>)})
+app.get('', (req, res ) => { res.send(<h1>Hola mundo</h1>)})
 
 app.use('/api/chat', chatRouter)
 
