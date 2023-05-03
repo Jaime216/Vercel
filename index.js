@@ -2,7 +2,6 @@ var express = require('express')
 var cors = require('cors')
 var app = express()
  
-app.use(cors())
 
 
 require('dotenv').config()
@@ -22,6 +21,7 @@ app.use(express.json())
 // React App Static
 app.use('/', express.static('./index.html'))
 
+app.use(cors())
 // Use Routers
 app.use('/api/chat', chatRouter)
 
