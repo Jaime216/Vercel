@@ -1,0 +1,4 @@
+POST http://localhost:5000/api/messages
+Content-Type: application/json
+
+{ "userName":"64513fa15272f29d355633c7", "content":"Hola", "chatId":"64513fc95272f29d355633d4" }

@@ -1,0 +1,6 @@
+GET http://localhost:5000/api/messages
+Content-Type: application/json
+
+{
+    "chatId":"64513fc95272f29d355633d4"
+}
