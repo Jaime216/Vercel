@@ -1,7 +1,5 @@
 const cors = require('cors')
 const express = require('express')
-require('dotenv').config()
-require('./mongoose')
 const bodyParse = require('body-parser')
 
 // Express app
@@ -9,6 +7,10 @@ const app = express()
 
 app.use(cors())
 app.use(bodyParse.json())
+
+
+require('dotenv').config()
+require('./mongoose')
 // Express Routers
 const { userRouter } = require('./controllers/user')
 const { loginRouter } = require('./controllers/login')
