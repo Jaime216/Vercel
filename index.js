@@ -21,11 +21,8 @@ const handleErrors = require('./middleware/handleError')
 // Se necesita para las request
 app.use(express.json())
 
-// React App Static
-app.use('/', express.static('../FrontEnd/dist'))
-
 // Use Routers
-app.get('/', (req, res ) => { res.send(<h1>Hola mundo</h1>)})
+app.get('/', (req, res ) => { res.send('<h1>Hola mundo</h1>')})
 
 app.use('/api/chat', chatRouter)
 
