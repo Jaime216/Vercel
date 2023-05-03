@@ -1,12 +1,8 @@
-const express = require('express')
-const bodyParse = require('body-parser')
-const cors = require('cors')
-
-// Express app
-const app = express()
-
+var express = require('express')
+var cors = require('cors')
+var app = express()
+ 
 app.use(cors())
-app.use(bodyParse.json())
 
 
 require('dotenv').config()
